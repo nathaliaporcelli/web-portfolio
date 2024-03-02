@@ -1,0 +1,8 @@
+img {
+    width: 30%; /* ajusta a largura conforme o tamanho do contêiner pai */
+    max-width: 100px; /* define a largura máxima */
+    height: auto; /* permite que a altura se ajuste automaticamente à largura */
+    padding: 2.31%; /* aproximadamente 24px em relação à largura */
+    gap: 9.74%; /* aproximadamente 92px em relação à largura */
+
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de HTML Semântico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header p {
+            margin-top: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        section {
+            flex-grow: 1;
+        }
+        article {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        article header h2 {
+            margin-top: 0;
+        }
+        aside {
+            background-color: #ddd;
+            padding: 10px;
+            margin-left: 20px;
+            width: 200px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HTML Semântico</h1>
+        <p>O HTML semântico é uma abordagem de escrita de código HTML que visa atribuir significado semântico a cada elemento. Isso não apenas ajuda os desenvolvedores a entender a estrutura do documento, mas também é útil para mecanismos de busca e leitores de tela.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Página Inicial</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <article>
+                <header>
+                    <h2>Título do Artigo 1</h2>
+                    <p>Subtítulo ou resumo do artigo</p>
+                </header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <footer>
+                    <p>Publicado por: <span>Nome do Autor</span></p>
+                    <time datetime="2024-03-01">1 de Março de 2024</time>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h2>Título do Artigo 2</h2>
+                    <p>Subtítulo ou resumo do artigo</p>
+                </header>
+                <p>Donec ultricies nisi eget nunc ultricies, sed efficitur leo tristique...</p>
+                <footer>
+                    <p>Publicado por: <span>Nome do Autor</span></p>
+                    <time datetime="2024-03-01">1 de Março de 2024</time>
+                </footer>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Barra lateral</h2>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Exemplo de HTML Semântico. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
