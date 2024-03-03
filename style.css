@@ -1,16 +1,116 @@
-.img-projects {
-    width: 50%; /* ajusta a largura conforme o tamanho do contêiner pai */
-    max-width: 300px; /* define a largura máxima */
-    height: auto; /* permite que a altura se ajuste automaticamente à largura */
-    padding: 2.31%; /* aproximadamente 24px em relação à largura */
-    gap: 9.74%; /* aproximadamente 92px em relação à largura */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: var(--background, #0A192F);
+}
+
+header {
+    display: flex;
+    width: 1440px;
+    height: 80px;
+    padding: 18px 0px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(10, 25, 47, 0.80);
 
 }
-.img-profile img{
-    width: 30%; /* ajusta a largura conforme o tamanho do contêiner pai */
-    max-width: 100px; /* define a largura máxima */
-    height: auto; /* permite que a altura se ajuste automaticamente à largura */
-    padding: 2.31%; /* aproximadamente 24px em relação à largura */
-    gap: 9.74%; /* aproximadamente 92px em relação à largura */
+
+h1 {
+    width: 156px;
+    color: var(--primary, #CCD6F6);
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.nav {
+    display: flex;
+    padding: 0px 31px 0px 40px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 913px;
+}
+
+nav ul li a {
+    display: flex;
+    width: 84px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: var(--secondary, #ECEDEF);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
 
 }
+
+.presentation {
+    display: flex;
+    padding: 24px;
+    align-items: flex-start;
+    gap: 92px;
+}
+
+.name h2 {
+    width: 480px;
+    height: 64px;
+    flex-shrink: 0;
+    color: var(--primary, #CCD6F6);
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sub-title h3 {
+    width: 480px;
+    height: 24px;
+    flex-shrink: 0;
+    color: var(--secondary, #ECEDEF);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.sub-title .stack {
+    color: var(--green, #64FFDA);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.presentation p {
+    width: 480px;
+    height: 72px;
+    flex-shrink: 0;
+    color: var(--secondary, #ECEDEF);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+
+}
+
+.about {}

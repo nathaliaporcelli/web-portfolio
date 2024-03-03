@@ -5,7 +5,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+
 
     <title>Web-portfólio</title>
 </head>
@@ -13,8 +17,8 @@
 <body>
     <header>
         <h1>Portfólio</h1>
-        <!-- Barra navegação ( menu)-->
-        <nav>
+        <!-- Barra navegação (menu)-->
+        <nav class="nav">
             <ul>
                 <li><a href="#about">Sobre mim</a></li>
                 <li><a href="#portfolio">Portfólio</a></li>
@@ -24,51 +28,54 @@
         <!-- apresentação-->
         <section id="presentation" class="presentation">
             <div class="name">
-                <h2>Seu Nome Completo</h2>
-                <h3>Sua stack</h3>
-                <p>Oi,<br></p>
+                <h2>Nathalia Porcelli Weishaupt</h2>
+
+                <div class="sub-title">
+                    <h3>Desenvolvedora <span class="stack">Full-stack</span></h3>
+                </div>
+
+                <p>Apaixonada pelo desenvolvimento de soluções digitais focadas na experiência do usuário. Formada em
+                    Sistemas da Informação e com Especialização em Front-End.<br></p>
                 <div class="img-profile">
-                    <img src="/assets/img/perfil_new.jpeg" alt="imagem de perfil">
+                    <img src="/assets/img/perfi_new.jpeg" alt="imagem de perfil">
                 </div>
             </div>
+
         </section>
     </header>
     <main>
         <!-- sobre mim-->
         <section class="about">
             <h2>Sobre mim</h2>
+
+            <p>Apaixonada pelo desenvolvimento de soluções digitais focadas na experiência do usuário. Formada em
+                Sistemas da Informação e com Especialização em Front-End.</p>
+            <a href="/assets/docs/Nathalia Porcelli - curriculo.pdf" download>Download</a>
+            <img src="/assets/img/icone-download.png">
+            </div>
+
             <div>
-                <p>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently w</p>
-                <div><a href="/assets/docs/Nathalia Porcelli - curriculo.pdf" download>Download</a>
-                    <img src="/assets/img/icone-download.png">
-                </div>
-
+                <p>Principais tecnologias</p>
                 <div>
-                    <p>Principais tecnologias</p>
-                    <div>
-                        <span>HTML5<span>
-                                <span>CSS<span>
-                                        <span>JavaScript<span>
-                    </div>
-                    <div>
-                        <span class=""></span>
-                        <img src="" alt="">
-                        <span>Python<span>
-                                <img src="" alt="">
-                                <span>Flask<span>
-                                        <img src="" alt="">
-                                        <span>Java<span>
-                    </div>
-                    <div class="icon-contact">
-                        <img src="assets/img/logo-linkedin.png" alt="logo Linkedin">
-                        <img src="assets/img/logo-github.png" alt="logo Github">
-
-                    </div>
+                    <span>HTML5<span>
+                            <span>CSS<span>
+                                    <span>JavaScript<span>
                 </div>
+                <div>
+                    <span class=""></span>
+                    <img src="" alt="">
+                    <span>Python<span>
+                            <img src="" alt="">
+                            <span>Flask<span>
+                                    <img src="" alt="">
+                                    <span>Java<span>
+                </div>
+                <div class="icon-contact">
+                    <img src="assets/img/logo-linkedin.png" alt="logo Linkedin">
+                    <img src="assets/img/logo-github.png" alt="logo Github">
+
+                </div>
+            </div>
         </section>
         <!-- Projetos-->
         <section class="projects">
@@ -138,7 +145,7 @@
 
                         </ul>
                         <a href="https://github.com/seu-usuario/seu-repositorio" target="_blank">Meu Repositório no
-                            GitHub</a><img class="icon"src="assets/img/arrow-up.png">
+                            GitHub</a><img class="icon" src="assets/img/arrow-up.png">
 
                     </div>
 
