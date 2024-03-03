@@ -8,6 +8,12 @@
 
 body {
     background: var(--background, #0A192F);
+    display: flex;
+    width: 1440px;
+    padding-bottom: 120px;
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
 }
 
 header {
@@ -37,6 +43,15 @@ h1 {
     justify-content: flex-end;
     align-items: center;
     gap: 913px;
+}
+
+.nav-items {
+    display: flex;
+    width: 84px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
 }
 
 nav ul li a {
@@ -99,7 +114,7 @@ nav ul li a {
 
 }
 
-.presentation p {
+.text-presentation p {
     width: 480px;
     height: 72px;
     flex-shrink: 0;
@@ -113,4 +128,44 @@ nav ul li a {
 
 }
 
-.about {}
+.profile img {
+    width: 400px;
+    height: 410px;
+    flex-shrink: 0;
+}
+
+.img-profile {
+    width: 400px;
+    height: 410px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: url(/assets/img/perfil_new.jpeg), lightgray 0px -59.319px / 100% 145.968% no-repeat;
+}
+
+.about {
+    display: flex;
+    width: 1000px;
+    align-items: flex-end;
+    align-content: flex-end;
+    gap: 80px 40px;
+    flex-wrap: wrap;
+}
+
+.projects {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.contact {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+
+}
+
+footer {}
