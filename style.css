@@ -21,7 +21,6 @@ header {
     width: 1440px;
     height: 80px;
     padding: 18px 0px;
-    justify-content: center;
     align-items: center;
     background: rgba(10, 25, 47, 0.80);
 
@@ -35,7 +34,9 @@ h1 {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
 }
+
 
 .nav {
     display: flex;
@@ -43,15 +44,32 @@ h1 {
     justify-content: flex-end;
     align-items: center;
     gap: 913px;
+    display: flex;
+    /* Para permitir o alinhamento dos itens */
+    justify-content: space-between;
+    /* Alinha os itens à esquerda e à direita */
+    align-items: center;
+    /* Alinha os itens verticalmente */
+    padding: 10px 20px;
+    /* Adapte conforme necessário */
 }
 
-.nav-items {
+.link-header {
+    display: flex;
+    width: 84px;
+    height: 24px;
+    align-items: right;
+
+}
+
+nav ul {
     display: flex;
     width: 84px;
     height: 24px;
     justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
+
+
+
 }
 
 nav ul li a {
@@ -85,7 +103,7 @@ nav ul li a {
     flex-shrink: 0;
     color: var(--primary, #CCD6F6);
     font-family: Inter;
-    font-size: 64px;
+    font-size: 37px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -97,7 +115,7 @@ nav ul li a {
     flex-shrink: 0;
     color: var(--secondary, #ECEDEF);
     font-family: Inter;
-    font-size: 24px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -112,6 +130,7 @@ nav ul li a {
     font-weight: 400;
     line-height: normal;
 
+
 }
 
 .text-presentation p {
@@ -124,6 +143,7 @@ nav ul li a {
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+    padding-top: 24px;
     /* 150% */
 
 }
@@ -132,15 +152,37 @@ nav ul li a {
     width: 400px;
     height: 410px;
     flex-shrink: 0;
+  
 }
 
-.img-profile {
+.img-frame {
+    position: relative; /* Definimos como posição relativa para permitir o posicionamento absoluto da imagem */
     width: 400px;
     height: 410px;
     flex-shrink: 0;
     border-radius: 16px;
-    background: url(/assets/img/perfil_new.jpeg), lightgray 0px -59.319px / 100% 145.968% no-repeat;
+    border: 3px solid var(--green, #64FFDA);
+    overflow: hidden; /* Para esconder a parte da imagem que sai do frame */
 }
+
+.img-profile {
+    position: absolute; /* Definimos como posição absoluta para posicioná-la dentro do frame */
+    bottom: -20px; /* Ajusta a posição vertical da imagem para criar o espaço desejado */
+    right: -20px; /* Ajusta a posição horizontal da imagem para criar o espaço desejado */
+    border-radius: 16px; /* Mantemos o mesmo raio de borda do frame */
+    z-index: 1; /* Garante que a imagem esteja sobreposta ao frame */
+    width: calc(100% + 40px); /* Adiciona a largura extra para compensar o espaço entre o frame e a imagem */
+    height: calc(100% + 40px); /* Adiciona a altura extra para compensar o espaço entre o frame e a imagem */
+    background: url(/assets/img/perfil_new.jpeg), lightgray; /* Adicionamos a cor de fundo lightgray como fallback */
+    background-position: center; /* Posicionamento da imagem */
+    background-size: cover; /* Redimensiona a imagem para cobrir o elemento */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    margin-top: 10px;
+    margin-right: 10px;
+    
+}
+
+
 
 .about {
     display: flex;
