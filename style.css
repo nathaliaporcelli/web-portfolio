@@ -74,6 +74,7 @@ nav ul {
 
 nav ul li a {
     display: flex;
+    text-wrap: nowrap;
     width: 84px;
     height: 24px;
     justify-content: center;
@@ -86,6 +87,7 @@ nav ul li a {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    padding: 20px;
 
 
 }
@@ -151,44 +153,79 @@ nav ul li a {
 .profile img {
     width: 400px;
     height: 410px;
-  
+
 }
 
 .img-frame {
-    position: relative; /* Definimos como posição relativa para permitir o posicionamento absoluto da imagem */
+    position: relative;
+    /* Definimos como posição relativa para permitir o posicionamento absoluto da imagem */
     width: 400px;
     height: 410px;
     border-radius: 16px;
-    border: 3px solid var(--green, #64FFDA);   
+    border: 3px solid var(--green, #64FFDA);
     z-index: 2;
 }
 
 .img-profile {
-    position: absolute; /* Definimos como posição absoluta para posicioná-la dentro do frame */
-    top: 16px; /* Ajusta a posição vertical da imagem para criar o espaço desejado */
-    right: 16px; 
+    position: absolute;
+    /* Definimos como posição absoluta para posicioná-la dentro do frame */
+    top: 16px;
+    /* Ajusta a posição vertical da imagem para criar o espaço desejado */
+    right: 16px;
     left: -14px;
-    bottom: -14px;/* Ajusta a posição horizontal da imagem para criar o espaço desejado */
-    border-radius: 16px; /* Mantemos o mesmo raio de borda do frame */
-    z-index: 1; /* Garante que a imagem esteja sobreposta ao frame */
-    background: url(/assets/img/perfil_new.jpeg), lightgray; /* Adicionamos a cor de fundo lightgray como fallback */
-    background-position: center; /* Posicionamento da imagem */
-    background-size: cover; /* Redimensiona a imagem para cobrir o elemento */
-    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    bottom: -14px;
+    /* Ajusta a posição horizontal da imagem para criar o espaço desejado */
+    border-radius: 16px;
+    /* Mantemos o mesmo raio de borda do frame */
+    z-index: 1;
+    /* Garante que a imagem esteja sobreposta ao frame */
+    background: url(/assets/img/perfil_new.jpeg), lightgray;
+    /* Adicionamos a cor de fundo lightgray como fallback */
+    background-position: center;
+    /* Posicionamento da imagem */
+    background-size: cover;
+    /* Redimensiona a imagem para cobrir o elemento */
+    background-repeat: no-repeat;
+    /* Evita a repetição da imagem */
     flex-shrink: 0;
 
-    
-}
 
+}
 
 
 .about {
     display: flex;
-    width: 1000px;
-    align-items: flex-end;
-    align-content: flex-end;
-    gap: 80px 40px;
-    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    padding: 24px;
+    align-items: center;
+    width: 1034px;
+
+}
+
+.container-global-title{
+    width:203px;
+    color: var(--primary, #CCD6F6);
+    justify-content: center;
+    flex-direction: row;
+    width:1034px;
+    margin:24px;
+    
+
+}
+.container-about{
+    display: flex;
+    width: 1034px;
+    justify-content: center;
+    background-color:red;
+}
+
+.linha-global{
+    width:700px;
+    border:0.5px solid #64FFDA;
+
+
+
 }
 
 .projects {
