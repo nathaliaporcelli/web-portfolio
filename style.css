@@ -195,38 +195,119 @@ nav ul li a {
 
 .about {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    padding: 24px;
-    align-items: center;
-    width: 1034px;
+    justify-content: center;
 
 }
 
-.container-global-title{
-    width:203px;
-    color: var(--primary, #CCD6F6);
+.content-title-global {
+    display: flex;
     justify-content: center;
     flex-direction: row;
-    width:1034px;
-    margin:24px;
-    
-
-}
-.container-about{
-    display: flex;
     width: 1034px;
+    margin: 24px;
+}
+
+.title-global {
+    display: flex;
+    width: 182.146px;
+    height: 40px;
+    flex-direction: column;
     justify-content: center;
-    background-color:red;
+    flex-shrink: 0;
+    color: var(--primary, #CCD6F6);
+    text-align: center;
+    font-family: Inter;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
 }
 
-.linha-global{
-    width:700px;
-    border:0.5px solid #64FFDA;
+.linha-global {
+    width: 700px;
+    border: 0.5px solid #64FFDA;
+    margin: 25px;
+}
 
+.container-about {
+
+}
+
+.content-about-text {
+    width: 480px;
+    height: 116px;
+    color: var(--secondary, #ECEDEF);
+    text-align: justify;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+
+}
+
+
+
+.resume {
+    display: flex;
+    padding: 12px 8px;
+    align-items: flex-start;
+    border-radius: 8px;
+    background: var(--primary, #CCD6F6);
+    width:117px;
+    height:48px;
+
+}
+.resume img{
+    width:24px;
+    height:24px;
+
+    margin-right:20px;
 
 
 }
+
+.resume a {
+    color: var(--background, #0A192F);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    
+  
+    /* 150% */
+
+}
+
+.container-stack {
+    width: 480px;
+    height: 24px;
+    flex-shrink: 0;
+    color: var(--secondary, #ECEDEF);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+
+}
+
+.content-stack {
+    color: var(--secondary, #ECEDEF);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.icon-contact {}
 
 .projects {
     display: flex;
