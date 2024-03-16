@@ -179,7 +179,7 @@ nav ul li a {
     /* Mantemos o mesmo raio de borda do frame */
     z-index: 1;
     /* Garante que a imagem esteja sobreposta ao frame */
-    background: url(/assets/img/perfil_new.jpeg), lightgray;
+    background: url(./assets/img/perfil_new.jpeg), lightgray;
     /* Adicionamos a cor de fundo lightgray como fallback */
     background-position: center;
     /* Posicionamento da imagem */
