@@ -200,6 +200,11 @@ nav ul li a {
 
 }
 
+.about-icon-contact{
+    display: flex;
+
+}
+
 .content-title-global {
     display: flex;
     justify-content: center;
@@ -210,7 +215,7 @@ nav ul li a {
 
 .title-global {
     display: flex;
-    width: 182.146px;
+    width: auto;
     height: 40px;
     flex-direction: column;
     justify-content: center;
@@ -223,29 +228,41 @@ nav ul li a {
     font-weight: 400;
     line-height: normal;
 
+
 }
 
 .linha-global {
-    width: 700px;
+    width: 1100px;
     border: 0.5px solid #64FFDA;
     margin: 25px;
 }
 
 .container-about {
-
+    justify-content: center;
+    display: flex;
+    padding: 24px;
+    gap: 92px;
 }
 
-.content-about-text {
+.content-about-text p {
     width: 480px;
-    height: 116px;
+    flex-shrink: 0;
     color: var(--secondary, #ECEDEF);
-    text-align: justify;
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    
     /* 150% */
+
+
+}
+
+.content-about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:24px;
 
 }
 
@@ -257,15 +274,16 @@ nav ul li a {
     align-items: flex-start;
     border-radius: 8px;
     background: var(--primary, #CCD6F6);
-    width:117px;
-    height:48px;
+    width: 117px;
+    height: 48px;
+    
 
 }
-.resume img{
-    width:24px;
-    height:24px;
 
-    margin-right:20px;
+.resume img {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
 
 
 }
@@ -276,29 +294,206 @@ nav ul li a {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
-    
-  
+
+
     /* 150% */
 
 }
 
 .container-stack {
-    width: 480px;
-    height: 24px;
-    flex-shrink: 0;
+    width: auto;
+    display: flex;
+    height: 204px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+
+
+}
+
+.content-stack-text {
     color: var(--secondary, #ECEDEF);
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
-    /* 150% */
+    line-height: normal;
+    justify-content: center;
+
 
 }
 
-.content-stack {
+.content-stack-stack {
     color: var(--secondary, #ECEDEF);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    justify-content: center;
+
+
+}
+
+
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-project {
+    justify-content: center;
+    display: flex;
+    padding: 24px;
+    gap: 92px;
+    align-items: center;
+}
+
+.project-img img {
+    width: 446px;
+    height: 280px;
+    flex-shrink: 0;
+
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.project-content-title {
+    display: flex;
+    width: 249px;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--secondary, #ECEDEF);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    gap: 24px;
+}
+
+.project-content-text {
+    display: flex;
+    width: 480px;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--secondary, #ECEDEF);
+    text-align: justify;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    /* 146.667% */
+
+
+}
+
+.project-content-stack {
+    display: flex;
+    flex-direction: row;
+    /* Definindo a direção para linha */
+    gap: 8px;
+    /* Adicionando espaçamento entre os itens */
+
+
+}
+
+
+
+.project-content-stack li {
+    display: flex;
+    height: 22px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 2px;
+    background: var(--primary, #CCD6F6);
+
+
+}
+
+.project-content-repository a {
+    font-family: "Noto Sans Mono";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #CCD6F6;
+    font-family: "Noto Sans Mono";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.project-content-link-repository-img img {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.contact {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    gap: 80px;
+
+
+}
+
+.icon-contact {
+    width: 64px;
+    height: 64px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.contact-item span {
+    display: flex;
+    width: 121.001px;
+    height: 24px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--secondary, #ECEDEF);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    gap: 36px;
+}
+
+.contact-item-text {
+    display: flex;
+    width: 212.447px;
+    height: 24px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--secondary, #ECEDEF);
+    text-align: center;
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -307,23 +502,22 @@ nav ul li a {
 
 }
 
-.icon-contact {}
-
-.projects {
-    display: flex;
-    padding: 24px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 80px;
+.footer-line {
+    width: 1000px;
+    border: 0.5px solid #64FFDA;
+    margin: 25px;
 }
-
-.contact {
+.footer-text{
     display: flex;
-    padding: 24px;
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
-
+    flex-direction: line;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--secondary, #ECEDEF);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    gap: 36px;
 }
-
-footer {}
