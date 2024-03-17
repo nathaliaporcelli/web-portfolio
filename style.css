@@ -200,7 +200,7 @@ nav ul li a {
 
 }
 
-.about-icon-contact{
+.about-icon-contact {
     display: flex;
 
 }
@@ -252,7 +252,7 @@ nav ul li a {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    
+
     /* 150% */
 
 
@@ -262,7 +262,7 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap:24px;
+    gap: 24px;
 
 }
 
@@ -276,9 +276,10 @@ nav ul li a {
     background: var(--primary, #CCD6F6);
     width: 117px;
     height: 48px;
-    
+
 
 }
+
 
 .resume img {
     width: 24px;
@@ -335,8 +336,6 @@ nav ul li a {
 
 }
 
-
-
 .projects {
     display: flex;
     flex-direction: column;
@@ -351,12 +350,57 @@ nav ul li a {
     align-items: center;
 }
 
+.project-img {
+    position: relative;
+}
+
 .project-img img {
     width: 446px;
     height: 280px;
     flex-shrink: 0;
+    z-index: 1;
+}
+
+.project-button {
+    position: absolute;
+    top: 50%;
+    /* Ajuste a posição vertical conforme necessário */
+    left: 50%;
+    /* Ajuste a posição horizontal conforme necessário */
+    transform: translate(-50%, -50%);
+    align-items: center;
+    border-radius: 8px;
+
+    background: var(--primary, #0A192F);
+    width: 200px;
+    height: 48px;
+    z-index: 2;
+    /* Coloque o botão sobre a imagem */
+    display: flex;
+    /* Torna o container flexível */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    display: flex;
+    padding: 12px 8px;
+    height: 48px;
+}
+
+.project-button a {
+    color: var(--background, #ECEDEF);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    
+
+
+
+    /* 150% */
 
 }
+
 
 .project-content {
     display: flex;
@@ -396,6 +440,7 @@ nav ul li a {
 
 }
 
+
 .project-content-stack {
     display: flex;
     flex-direction: row;
@@ -412,9 +457,11 @@ nav ul li a {
     display: flex;
     height: 22px;
     padding: 4px;
+    width: 70px;
     justify-content: center;
     align-items: center;
     gap: 8px;
+    margin-bottom: 8px;
     border-radius: 2px;
     background: var(--primary, #CCD6F6);
 
@@ -507,7 +554,8 @@ nav ul li a {
     border: 0.5px solid #64FFDA;
     margin: 25px;
 }
-.footer-text{
+
+.footer-text {
     display: flex;
     flex-direction: line;
     justify-content: center;
